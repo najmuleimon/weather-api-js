@@ -13,15 +13,16 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <section>
+    <section class="banner">
         <div class="container">
-            <div class="col-md-6 offset-md-3">
+            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 text-center">
+                <h1>Get Weather Update Live</h1>
                 <div class="input-group mb-3">
                     <input id="city-name" type="text" class="form-control" placeholder="Enter a location for Weather information">
-                    <button onclick="searchWeather()" type="button" class="btn btn-danger">Search</button>
+                    <button onclick="searchWeather()" id="search-weather" type="button" class="btn btn-danger">Search</button>
                 </div>
             </div>
-            <div class="col-md-6 offset-md-3">
+            <div class="col-lg-6 offset-lg-3">
                 <div class="weather-status text-white text-center">
                     <img id="weather-icon" src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
                     <h1 id="city">Dhaka</h1>
@@ -29,7 +30,7 @@
                     <h3>minimum temperature:<span id="min-temp">38.06</span>&deg;C</h3>
                     <h3>maximum temperature:<span id="max-temp">38.06</span>&deg;C</h3>
                     <h3>humidity:<span id="humidity">60</span>%</h3>
-                    <h1 id="condition" class="lead">Clouds</h1>
+                    <h3 id="condition">Clouds</h3>
                     <h2>wind speed: <span id="wind">1.77</span> km/h <span id="degree">170</span> deg</h2>
                 </div>
             </div>
